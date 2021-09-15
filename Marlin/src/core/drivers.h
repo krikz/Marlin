@@ -53,6 +53,7 @@
 #define _TMC5130_STANDALONE 0x5130B
 #define _TMC5160            0x5160A
 #define _TMC5160_STANDALONE 0x5160B
+#define _SERVOSTEPPER       0x555
 
 #define _DRIVER_ID(V) _CAT(_, V)
 #define _AXIS_DRIVER_TYPE(A,T) (_DRIVER_ID(A##_DRIVER_TYPE) == _DRIVER_ID(T))
@@ -93,6 +94,8 @@
 //
 // Trinamic Stepper Drivers
 //
+
+#define HAS_SERVOSTEPPER HAS_DRIVER(SERVOSTEPPER)
 
 // Test for supported TMC drivers that require advanced configuration
 // Does not match standalone configurations
