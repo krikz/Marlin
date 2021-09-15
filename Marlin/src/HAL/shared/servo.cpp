@@ -148,9 +148,9 @@ void Servo::writeMicroseconds(int value) {
     value = constrain(value, SERVO_MIN(), SERVO_MAX()) - (TRIM_DURATION);
     value = usToTicks(value);  // convert to ticks after compensating for interrupt overhead - 12 Aug 2009
 
-    CRITICAL_SECTION_START;
+    //CRITICAL_SECTION_START;
     servo_info[channel].ticks = value;
-    CRITICAL_SECTION_END;
+    //CRITICAL_SECTION_END;
   }
 }
 
