@@ -2622,7 +2622,7 @@
 #if HAS_SERVOSTEPPER
   #define SERVO_X_INDEX 0
   #define SERVO_Y_INDEX 1
-  #define SERVO_Z_INDEX 2
+  #define SERVO_Z_INDEX 46
 #endif
 
 /**

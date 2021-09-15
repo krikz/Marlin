@@ -4059,7 +4059,7 @@
 #if HAS_SERVOSTEPPER
   #define SERVO_X_INDEX 0
   #define SERVO_Y_INDEX 1
-  #define SERVO_Z_INDEX 2
+  #define SERVO_Z_INDEX 46
 #endif
 
 /**
@@ -4194,7 +4194,7 @@
 //
 // M43 - display pin status, toggle pins, watch pins, watch endstops & toggle LED, test servo probe
 //
-//#define PINS_DEBUGGING
+#define PINS_DEBUGGING
 
 // Enable Marlin dev mode which adds some special commands
 //#define MARLIN_DEV_MODE

@@ -56,6 +56,7 @@ void ServoStepper::setDir(const uint8_t direction) { currentDir = direction; }
 uint8_t ServoStepper::getDir() { return currentDir; }
 
 void ServoStepper::doStep(const uint8_t stepByte) {
+  SERIAL_ECHOPGM("doStep", stepByte);
   if (previousStepWrite != stepByte) {
     currentDir ? currentPosition++ : currentPosition--;
     if (!servo[servoIndex].attached()) servo[servoIndex].reattach();

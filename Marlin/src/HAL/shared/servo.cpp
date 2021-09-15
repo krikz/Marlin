@@ -96,8 +96,8 @@ int8_t Servo::attach(const int pin, const int min, const int max) {
   if (pin > 0) {
     servo_info[this->servoIndex].Pin.nbr = pin;
     #if ENABLED(PINS_DEBUGGING)
-      SERIAL_ECHOPAIR("Attach and Allocate  Servo #", this->servoIndex);
-      SERIAL_ECHOPAIR("(", servo_info[this->servoIndex].Pin.nbr);
+      SERIAL_ECHOPGM("Attach and Allocate  Servo #", this->servoIndex);
+      SERIAL_ECHOPGM("(", servo_info[this->servoIndex].Pin.nbr);
       SERIAL_CHAR(')');
       SERIAL_EOL();
     #endif
