@@ -2620,9 +2620,9 @@
  * Axes that use the 'SERVOSTEPPER' driver type are redirected to a servo
  */
 #if HAS_SERVOSTEPPER
-  #define SERVO_X_INDEX 0
-  #define SERVO_Y_INDEX 1
-  #define SERVO_Z_INDEX 2
+  //#define SERVO_X_INDEX 0
+  //#define SERVO_Y_INDEX 1
+  #define SERVO_Z_INDEX 0
 #endif
 
 /**
@@ -2697,7 +2697,7 @@
 /**
  * M43 - display pin status, watch pins for changes, watch endstops & toggle LED, Z servo probe test, toggle pins
  */
-//#define PINS_DEBUGGING
+#define PINS_DEBUGGING
 
 // Enable Marlin dev mode which adds some special commands
 //#define MARLIN_DEV_MODE
