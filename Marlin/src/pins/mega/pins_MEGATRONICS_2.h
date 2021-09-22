@@ -30,6 +30,9 @@
 #endif
 
 #define BOARD_INFO_NAME "Megatronics v2.0"
+
+#define SERVO0_PIN         48   // AUX3-6
+
 //
 // Limit Switches
 //
